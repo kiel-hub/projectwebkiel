@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | N0RTHERN LIGHTS</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="site-header">
+      <a href="index.html" class="logo"
+        ><img src="images/BrandLogo.jpeg" alt="Logo" width="80" height="82"
+      /></a>
+
+      <button class="nav-toggle" id="open-nav">☰</button>
+
+      <nav id="mobile-nav" class="open">
+        <button class="nav-close" id="close-nav">x</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </header>
+
+    <footer class="contact-footer">
+      <p style="color: #52c2c8">NORTHERN LIGHTS</p>
+      <p>Jl. Pintu Air Raya No. 54 - 54A, Jakarta 10710, Indonesia</p>
+      <a
+        href="mailto:seasoned_babyboomers@icloud.com?subject=Attached%20are%20my%20CV%2C%20I%20am%20seeking%20for%20a%20chat%20slot%20with%20N0RTHERN%20LIGHTS%20STRATEGIC%20FOUNDERS&body=I%20have%20read%20the%20concept%20of%20N0RTHERN%20LIGHTS%20PARTNERSHIP%20BUILDING%20BLOCKS%20and%20I%20am%20interested%20to%20be%20a%20BUSINESS%20OPERATORS%2FTECHNOLOGY%2FSEED%20CAPITAL%20PASSIVE%20(*delete%20those%20you%20are%20not%20interested%20in)%20FOUNDER."
+        >seasoned_babyboomers@icloud.com</a
+      >
+    </footer>
+    <script>
+      const nav = document.getElementById("mobile-nav");
+      const openBtn = document.getElementById("open-nav");
+      const closeBtn = document.getElementById("close-nav");
+
+      openBtn.addEventListener("click", () => {
+        nav.classList.add("active"); // buka nav
+        openBtn.style.display = "none"; // sembunyikan tombol hamburger
+        closeBtn.style.display = "inline"; // tampilkan tombol silang
+      });
+
+      closeBtn.addEventListener("click", () => {
+        nav.classList.remove("active"); // tutup nav
+        openBtn.style.display = "inline"; // tampilkan tombol hamburger
+        closeBtn.style.display = "none"; // sembunyikan tombol silang
+      });
+    </script>
+  </body>
+</html>

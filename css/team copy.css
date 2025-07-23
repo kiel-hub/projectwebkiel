@@ -1,0 +1,449 @@
+/* RESET DAN DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Proxima Novaaaa", sans-serif;
+  font-weight: 300;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  color: #555 !important;
+}
+a:hover {
+  opacity: 0.6;
+}
+strong {
+  font-family: "Proxima Novaa";
+}
+/* HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 48px 0;
+  z-index: 1000;
+}
+.logo img {
+  width: 120px;
+  height: auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  font-family: "Proxima Nova", "sans-serif";
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 14px;
+  text-transform: uppercase;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+#open-nav,
+#close-nav {
+  display: none;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(../fonts/Proxima-Nova-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Novaaaa";
+  src: url(../fonts/Proxima-Nova-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/*FONT FACE*/
+@font-face {
+  font-family: "Proxima Novaa";
+  src: url(../fonts/Proxima-Nova-Semibold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Novaaa";
+  src: url(../fonts/Proxima-Nova-Bold.ttf) format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Acumin-Pro-ExtraCondensed";
+  src: url(../fonts/fonnts.com-Acumin_Pro_ExtraCondensed_Light.otf)
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fjalla One";
+  src: url(https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap)
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Acumin-Pro-ExtraCondensedd";
+  src: url(../fonts/fonnts.com-Acumin_Pro_ExtraCondensed_Bold.otf)
+    format("opentype");
+  font-weight: bolder;
+  font-style: normal;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 767px) {
+  .logo img {
+    width: 80px;
+    height: 82px;
+  }
+  nav {
+    display: none;
+  }
+  nav.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    gap: 5px;
+    z-index: 1000;
+  }
+  nav a {
+    color: #fff;
+    font-size: 13px;
+    font-family: "Proxima Novaaaa", sans-serif;
+  }
+  #open-nav {
+    display: inline-block;
+    position: fixed;
+    top: 28px;
+    right: 20px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #222;
+    cursor: pointer;
+    z-index: 11;
+  }
+  #close-nav {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 12;
+  }
+  #mobile-nav.active #close-nav {
+    display: inline;
+  }
+  nav.active + #close-nav {
+    display: inline-block;
+  }
+  nav.active ~ #open-nav {
+    display: none;
+  }
+  .nav-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .nav-toggle {
+    background: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #222;
+    cursor: pointer;
+    z-index: 11;
+  }
+  header {
+    position: fixed;
+    margin: 0;
+    padding: 10px 20px;
+    background: #fff;
+  }
+  .contact-footer {
+    flex-direction: column;
+  }
+  .contact-footer p {
+    margin-bottom: 16px;
+  }
+}
+
+/* DESKTOP OVERRIDES */
+@media (min-width: 768px) {
+  #open-nav,
+  #close-nav {
+    display: none !important;
+  }
+}
+.founder-row {
+  margin: 32px 2rem;
+}
+/* KONTEN UTAMA */
+.team-main {
+  margin-top: 120px; /* menyesuaikan tinggi header */
+  padding: 120px 48px;
+  background: #fff;
+  color: #222;
+}
+
+/* FOOTER */
+.contact-footer {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  color: aliceblue;
+  padding: 100px 50px;
+}
+footer a {
+  color: #fff !important;
+}
+footer p,
+footer a {
+  display: inline;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 1rem;
+  font-family: "Fjalla One", "sans-serif";
+}
+/* adjust konten */
+.space {
+  padding: 30px;
+}
+
+.ganda p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 16px 0;
+  color: #222;
+}
+.shamandchristian {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 10rem;
+}
+.team-hero {
+  text-align: center;
+  padding: 32px 0;
+}
+.team-hero h2 {
+  font-family: "Acumin-Pro-ExtraCondensed", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  color: #000;
+}
+.ganda {
+  text-align: right;
+}
+.shamchristian-profile.right {
+  text-align: left;
+}
+.shamchristian-profile.left {
+  text-align: right;
+}
+.shamchristian-profile {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  padding: 16px;
+  text-align: left;
+}
+#sham,
+#christian {
+  flex: 1 1 300px; /* minimum width 300px lalu fleksibel */
+  max-width: 500px;
+}
+.shamchristian-profile img {
+  width: 100%;
+  max-width: 420px;
+  max-height: 420px;
+  aspect-ratio: 1;
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 4px;
+}
+.shamchristian-profile h3 {
+  text-align: left;
+}
+.shamchristian-profile h3 {
+  font-family: "Proxima Novaa", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #000;
+}
+.shamchristian-profile p strong {
+  font-family: "Proxima Novaaa", sans-serif;
+}
+.shamchristian-profile p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 16px 0;
+  line-height: 28px;
+}
+.shamchristian-profile h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 8px;
+  text-decoration: underline;
+}
+.ganda {
+  margin: 0 10rem;
+}
+.founder h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #000;
+  font-family: "Proxima Novaa", sans-serif;
+}
+.founder strong,
+.shamchristian-profile strong {
+  font-family: "Proxima Novaaa", sans-serif;
+  font-weight: bold;
+}
+.founder h4,
+.shamchristian-profile h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 8px;
+  text-decoration: underline;
+}
+.founder img,
+.shamchristian-profile img {
+  width: 100%;
+  max-width: 420px;
+  max-height: 420px;
+  aspect-ratio: 1;
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 4px;
+}
+.founder .ganda p,
+.founder .ganda h4 {
+  text-align: right;
+  text-decoration: none;
+}
+.founder p,
+.ganda p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 16px 0;
+  line-height: 28px;
+}
+.founder .ganda h4 {
+  text-align: right;
+  text-decoration: none;
+}
+.founder h4,
+.shamchristian-profile h4 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Proxima Novaaa", sans-serif;
+  margin: 24px 0 8px;
+  text-decoration: underline;
+}
+iframe {
+  overflow-clip-margin: content-box !important;
+  overflow: clip !important;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  border: 0;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+}
+.ganda h3 {
+  text-align: left;
+}
+#sham img,
+#christian img {
+  width: 80%;
+  max-width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.founder-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 10rem;
+}
+.team_card {
+  text-align: center;
+  padding: 16px 0;
+}
+.team_card h2 {
+  font-size: 60px;
+  font-weight: 300;
+  margin-top: 68px;
+  margin-bottom: 34px;
+  line-height: 1.1em;
+  text-align: center;
+  font-family: "Acumin-Pro-ExtraCondensed", sans-serif;
+}
+.team_card p {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 16px 0;
+  line-height: 1.68em;
+  text-align: left;
+}
+.team_card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#christian p {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .team-hero h2 {
+    display: none;
+    font-size: 8vw;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #000;
+  }
+}
