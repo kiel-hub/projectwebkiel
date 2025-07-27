@@ -134,7 +134,6 @@ a:-webkit-any-link {
   color: #fff;
   font-family: "Proxima Novaaa", "sans-serif";
 }
-
 /* CTA BUTTON */
 .cta-button {
   border: none;
@@ -231,7 +230,6 @@ button {
 .philosophy p strong {
   font-family: "Proxima Novaaa", "sans-serif";
 }
-
 /* RESPONSIVE DESIGN */
 @media (max-width: 767px) {
   .logo img {
@@ -337,7 +335,6 @@ button {
     margin-bottom: 16px;
   }
 }
-
 /* DESKTOP OVERRIDES */
 @media (min-width: 768px) {
   #open-nav,
