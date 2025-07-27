@@ -104,6 +104,12 @@ a:-webkit-any-link {
 #close-nav {
   display: none;
 }
+main {
+  background-color: #ffffff;
+  margin-top: 200px;
+  padding: 120px 48px;
+  color: #222;
+}
 /* FOOTER */
 .contact-footer {
   display: flex;
