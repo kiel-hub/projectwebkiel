@@ -15,6 +15,10 @@ a {
 a:hover {
   opacity: 0.4;
 }
+:is(section, article, aside, nav) h1 {
+  font-size: 60px;
+}
+
 /* FONT-FACE */
 @font-face {
   font-family: "Proxima Nova";
@@ -123,6 +127,7 @@ a:-webkit-any-link {
   margin-top: 60px;
   margin-bottom: 49.8px;
   font-family: "Acumin-Pro-ExtraCondensed", sans-serif;
+  font-size: 60px;
   font-weight: 300;
   color: #fff;
 }
