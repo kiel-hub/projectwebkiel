@@ -15,8 +15,11 @@ a {
 a:hover {
   opacity: 0.4;
 }
-:is(section, article, aside, nav) h1 {
-  font-size: 60px;
+section h1,
+article h1,
+aside h1,
+nav h1 {
+  font-size: 60px !important;
 }
 
 /* FONT-FACE */
